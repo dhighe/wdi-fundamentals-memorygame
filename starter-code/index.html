@@ -1,34 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-	
-  <head>
-    <title>Memory Game</title>
-  </head>
-  
-    <nav class="clearfix">
-      <a href="#">Instructions</a>
-      <a href="#">Game</a>
-    </nav>
-    
-    <body>
-    	<h1>Memory Game</h1>
-    	<h2>Instructions</h2>
-    	<p>
-    		Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are         flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
-    	</p>
-    	
-    	<div class="board">
-		<div class="card"></div>
-		<div class="card"></div>
-		<div class="card"></div>
-		<div class="card"></div>
-  	</div>
-  
-  	<footer>
-  		Created with &hearts; by <span class="name">GA</span>
-	</footer>
+<!DOCTYPE html> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 
-     </body>
+	<title>Memory Game</title>
+
+<input type="button" value="Instructions" id="show_Unshow" onclick="show_Unshow();"><!-- Tied with JS to toggle the game instructions on and off -->
+<input type="button" value="Game" onClick="window.location.reload()"> <!-- Reloads the page to refresh the game -->
+
+    <nav class="clearfix">
+    </nav>
+	
+	<body>
+  
+  <h1>Memory Game</h1>
+  <div id="Instructions">
+  <h2>Instructions</h2>
+  <small><p>
+      Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
+    </p>
+<!-- Additional instructions were added, incase any one was unsure what to do on the page -->
+   <h3>Simply click on which cards you think are a match until you've found all the pairs! </br>
+   To hide the instructions, press the Instructions button at the top. </br>
+   To restart the game, press the Game button at the top. 
+   </h3>
+   </small>
+   </div>
+  
+  <div id="game-board" class="board">
+	</div>
+  
+  <footer>
+  		 <p>Created with &hearts; by <span class="name">Donald</span></br>
+  		 <!-- Entered as a criteria for the assignment. Unfortunately I dont believe following me on these social media sites would benefit anyone regarding any projects I am working on -->
+If you like what you see, please follow me on <a href="https://www.facebook.com/profile.php?id=10239561">facebook</a> or <a href="https://www.linkedin.com/in/donald-highe-87448162?trk=hp-identity-photo">linkedin</a>. 
+</p>
+  </footer>
+ 
+		<script src="main.js"></script>
+  </body>
 
 
 </html>
+
+
+
+
